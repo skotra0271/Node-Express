@@ -1,0 +1,40 @@
+{
+  "name": "myexpress",
+  "version": "1.0.0",
+  "description": "sample application",
+  "main": "app.js",
+  "scripts": {
+    "start": "set DEBUG=server:* & nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sreekanth kotra",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "chalk": "2.4.1",
+    "debug": "2.6.6",
+    "ejs": "2.6.1",
+    "express": "4.16.3",
+    "jquery": "3.3.1",
+    "morgan": "1.9.0",
+    "mssql": "4.1.0",
+    "pug": "2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.11.0",
+    "nodemon": "1.17.3"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modiles/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
